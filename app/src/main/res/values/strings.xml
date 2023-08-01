@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppsVegans</string>
+    <string name="hint_email">Email</string>
 </resources>
