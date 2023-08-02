@@ -1,47 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_fundo"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <View
-        android:id="@+id/containerTopo"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scr="drawable/logo"
-        app:layout_constraintBottom_toTopOf="@id/containerTopo"
-        app:layout_constraintStart_toStartOf="@id/containerTopo"
-        app:layout_constraintEnd_toEndOf="@id/containerTopo"
-        app:layout_constraintBottom_toBottomOf="@id/containerTopo"/>
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="whit"
+        android:src="@drawable/img" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/containerTopo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Onde o alimento te faz bem"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_email">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Faça seu login no APP"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        </com.google.android.material.textfield.TextInputEditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Enseira seu Nome"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:textStyle="bold" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Enseira sua email"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:textStyle="bold" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Ensira sua senha"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
