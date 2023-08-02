@@ -6,6 +6,10 @@
     <color name="black">#000000</color>
     <color name="black_light">#5c5c5c</color>
 
+    <color name="green">#6C9A37</color>
+    <color name="green_light">#4B632F</color>
+    <color name="green_white">#8DAE67</color>
+    <color name="white">#FFFFFF</color>
 
 
 
