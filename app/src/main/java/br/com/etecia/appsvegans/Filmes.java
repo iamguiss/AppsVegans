@@ -7,7 +7,7 @@ public class Filmes {
 
     private String Categoria;
 
-    private int imagem
+    private int imagem;
 
     public Filmes(String titulo, String descrição, String categoria, int imagem) {
         this.Titulo = titulo;

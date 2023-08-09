@@ -33,7 +33,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.myViewHolder> {
 
         view = inflater.inflate(R.layout.modelo_veganos, parent, false);
 
-        return new RecyclerView.ViewHolder;
+        return null;
 
 
     }
@@ -48,7 +48,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.myViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstFilmes.size();
     }
 
     public class myViewHolder extends RecyclerView.ViewHolder{
@@ -61,7 +61,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.myViewHolder> {
             super(itemView);
         idTituloFilmes = itemView.findViewById(R.id.idTituloFilmes);
         idImagemFilmes = itemView.findViewById(R.id.idImgFilmes);
-            idCardFilmes = itemView.findViewById(R.id.idCardFilmes);
+        idCardFilmes = itemView.findViewById(R.id.idCardFilmes);
 
 
         }
